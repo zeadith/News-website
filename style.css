@@ -1,0 +1,257 @@
+html {
+	font-size: 62.5%
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Oswald', sans-serif;
+  color: #000000;
+  font-size: 1.6rem;
+}
+
+/*---header---*/
+.page-header {
+	width: 100%;
+}
+
+.page-header .header-title{
+	background-color: #0b0040; /*navy*/
+	margin: 0;
+	padding: 16px 10px 16px 0;
+}
+
+.page-header .header-title h1 {
+	margin: 0;
+	padding: 0;
+	color: #95e500; /*lime*/
+	text-align: right;
+	font-size: 2.4rem;
+	font-weight: 300;
+}
+
+
+/*---top and bottom naviga---*/
+.page-nav  .navigation-menu {
+	list-style: none;
+	padding: 0;
+	margin-top: 20px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.page-nav .navigation-menu li a {
+	text-decoration: none;
+	color: #000000;
+	font-size: 1.4rem;
+}
+
+/*---lead---*/
+.lead {
+	display: none;
+}
+
+/*---article---*/
+.article {
+	margin: 0 5px 20px 5px;
+	border-bottom: 1px dotted #616b87;
+}
+
+.article .article-header {
+	margin: 0;
+	padding-left: 5px;
+	width: 100%;
+	border-left: 4px solid #95e500;
+}
+
+.article .article-header .article-date {
+	text-transform: uppercase;
+	font-size: 1.4rem;
+	color: #95e500;
+}
+
+.article .article-header h3 {
+	display: inline;
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	color: #616b87;
+}
+
+.article .article-header h2 {
+	margin: 0;
+	padding: 0;
+}
+
+.article .article-header h2 a {
+	text-decoration: none;
+	color: #000000;
+}
+
+.article p {
+	text-align: justify;
+}
+
+.article img {
+	max-width: 100%;
+	display: block;
+	padding-top: 10px;
+}
+
+.article .show-more {
+	text-decoration: none;
+	color: #2389c9;
+	font-size: 1.2rem;
+	margin-left: 5px;
+}
+
+.article .show-more:hover {
+	text-decoration: underline;
+
+}
+/*---aside---*/
+.adverts {
+	display: none;
+}
+
+/*---footer---*/
+ .footer-title {
+	background-color: #95e500; /*lime*/
+	margin-top: 20px;
+	padding: 16px 10px 16px 0;
+}
+
+ .footer-title h1 {
+	margin: 0;
+	padding: 0;
+	color: #0b0040; /*navy*/
+	text-align: right;
+	font-size: 1.4rem;
+	font-weight: 300;
+}
+
+ .footer-title h1 a {
+ 	text-decoration: none;
+ 	color: #0b0040; /*navy*/
+ }
+
+
+/*---   DESKTOP   ---*/
+
+@media only screen and (min-width: 640px){
+	body {
+		margin: 0 auto;
+	}
+
+	main {
+		max-width: 75vw;
+		overflow: auto;
+		margin: auto;
+	}
+	.page-header .page-nav {
+		 -webkit-box-shadow: 		0px 2px 23px 0px rgba(50, 50, 50, 0.15);
+			-moz-box-shadow:    	0px 2px 23px 0px rgba(50, 50, 50, 0.15);
+				 box-shadow:        0px 2px 23px 0px rgba(50, 50, 50, 0.15);
+	}
+
+	.page-nav .navigation-menu {
+		margin: 0;
+	}
+
+	.page-nav .navigation-menu li {
+		display: inline-block;
+		margin: 0 30px 0 30px;
+	}
+
+	.page-nav .navigation-menu li a:hover{
+		color: #95e500;
+	}
+
+	.lead {
+		display: block;
+		box-sizing: border-box;
+		padding: 2%;
+		margin-top: 20px;
+	}
+
+	.lead .lead-image {
+		margin: 0;
+		padding: 0;
+		position: relative;
+	}
+
+	.lead a img {
+		max-width: 100%;
+		display: block;
+		
+	}
+	.lead .lead-title {
+		background: rgb(0, 0, 0); /* fallback color */
+	   	background: rgba(0, 0, 0, 0.7);
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+	}
+	.lead .lead-title h1 {
+	   color: white; 
+	   /*letter-spacing: -1px; */
+	   text-align: center;
+	}
+	.lead .lead-title h1 a {
+		text-decoration: none;
+		color: #ffffff; 
+	}
+
+	.lead .lead-title h1 a:hover {
+		text-decoration: underline;
+	}
+
+	.news {
+		width: 60%;
+		float: left;
+		margin: 0;
+		padding: 2%;
+		box-sizing: border-box;
+	}
+
+	.article {
+		margin: 10px 0 0 0;
+	}
+
+	.article .article-header h2 a:hover {
+		text-decoration: underline;
+	}
+
+	.adverts {
+		display: inline;
+		width: 38%;
+		float: left;
+		margin: 23px 0 0 0;
+		padding: 1%;
+		box-sizing: border-box;
+		background-color: #ecedef;
+	}
+
+	.adverts h1 {
+		margin: 12px 0 20px 0;
+	}
+
+	.adverts p {
+		margin: 5px;
+		text-align: justify;
+	}
+
+	.page-footer .page-nav {
+		 margin-top: 40px;
+		 -webkit-box-shadow: 		0px 2px 23px 0px rgba(50, 50, 50, 0.15);
+			-moz-box-shadow:    	0px 2px 23px 0px rgba(50, 50, 50, 0.15);
+				 box-shadow:        0px 2px 23px 0px rgba(50, 50, 50, 0.15);
+	/*http://css3gen.com/box-shadow/*/
+	}
+
+	 .footer-title {
+	 	margin: 0;
+	 }
+
+
+}/*klamerka konczaca media queries*/
